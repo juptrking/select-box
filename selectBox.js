@@ -32,7 +32,7 @@ var SelectBox = (function(){
         var matches = (Array.isArray(elems)) ? elems : [elems];
         matches.forEach(wrapSelectBox);
     }
-    pageReady(function () {
+    document.addEventListener("DOMContentLoaded", function() {
         initSelectBox();
         selectEvent('change',updateSelectBox);
         selectEvent('focus',toggleSelectBox);
