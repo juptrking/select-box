@@ -1,7 +1,7 @@
 var SelectBox = (function(){
     function wrapSelectBox(elem){
         // make sure the target is viable and isn't already wrapped
-        // wrap the select box with the dacade mark up
+        // wrap the select box with the facade mark up
         if (!elem.classList.contains('unstyled') && !elem.parentNode.classList.contains('selector')) {
             var myValue = elem.options[elem.selectedIndex].text;
             var modified = '<div class="selector"><span style="-webkit-user-select: none;">' + myValue + '</span>' + elem.outerHTML + '</div>';
